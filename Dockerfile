@@ -13,7 +13,7 @@ RUN gcc -static -o membarrier_check membarrier_check.c
 RUN strip membarrier_check
 
 # Pull base image.
-FROM quay.io/cdis/docker-baseimage-gui:v3.5.6_ctds.1.0.0
+FROM quay.io/cdis/docker-baseimage-gui:test_autoscaling
 
 # Docker image version is provided via build arg.
 ARG DOCKER_IMAGE_VERSION=unknown
